@@ -169,7 +169,3 @@ VITE_API_URL=http://localhost:5000/api
 
 ## 👨‍💻 Author
 **Developed by Trijal Shukla**
-
-GitHub: https://github.com/your-profile  
-LinkedIn: https://linkedin.com/in/your-profile  
-Instagram: https://instagram.com/your-profile  
