@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+
+:root{
+--glass-bg: rgba(255,255,255,0.04);
+--glass-border: rgba(255,255,255,0.06);
+}
+
+
+html, body, #root { height: 100%; }
+body {
+@apply bg-black text-slate-100;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+scroll-behavior: smooth; /* smooth scrolling */
+}
+
+
+/* Simple glass card */
+.glass {
+background: var(--glass-bg);
+border: 1px solid var(--glass-border);
+backdrop-filter: blur(8px) saturate(120%);
+}
+/* Navbar tweaks */
+header .glass { border-radius: 12px; }
+header .pag-btn { /* keep existing pag-btn but avoid conflicts */ }
+
+/* Mobile: make the logo text visible when enough width */
+@media (min-width: 640px) {
+  .logo-text { display: block; }
+}
+
+
+/* custom pagination bullets */
+.pag-btn { @apply px-3 py-1 rounded-md text-sm font-medium; }
+.pag-active { @apply bg-slate-700 text-white; }
